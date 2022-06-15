@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>자식창에서 부모창으로 값 전달하기</title>
+	
+	<link rel="stylesheet" href="common.css">
+	<script type="text/javascript">
+		function setParentText() {
+			opener.document.getElementById("pInput").value = document.getElementById("cInput").value;
+		}
+
+	</script>
+	
+</head>
+<body>
+	<h1>자식창에서 부모창으로 값 전달하기</h1>
+	<br><br>
+	<input type="text" id="cInput">
+	<input type="button" value="전달하기" onclick="setParentText();">
+	<br><br>
+	<input type="button" value="창닫기" onclick="window.close();">
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+
+	<title>자식창에서 부모창의 값 가져오기</title>
+	<link rel="stylesheet" href="common.css">
+
+	<script type="text/javascript">
+		function openChild() {
+			window.name = "parentForm";
+			window.open('child2.html', 'childForm', 'width=570, height=350, resizable=no, scrollbars=no');
+		}
+
+	</script>
+</head>
+
+<body>
+	<h1>자식창에서 부모창의 값 가져오기</h1>
+	<br><br>
+	<input type="button" value="자식창 열기" onclick="openChild();">
+	<br><br>
+	전달할 값 : <input type="text" id="pInput">
+
+</body>
+
+</html>
